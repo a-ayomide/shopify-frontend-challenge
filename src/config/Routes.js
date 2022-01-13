@@ -9,7 +9,7 @@ import Error404 from "../components/Error404";
 // create Loadable pages
 const Home = lazy(() => import("../pages/home/Home"));
 // const Login = lazy(() => import("../pages/auth/Login"));
-const About = lazy(() => import("../pages/about/About"));
+// const About = lazy(() => import("../pages/about/About"));
 
 const Routes = () => (
   // eslint-disable-next-line no-undef
@@ -25,7 +25,7 @@ const Routes = () => (
         <PublicRoute exact path="/" component={Home} />
 
         {/* public route: accessible to both !!authenticated users */}
-        <PublicRoute exact path="/about" component={About} />
+        {/* <PublicRoute exact path="/about" component={About} /> */}
 
         {/* catch all invalid urls */}
         <Route component={Error404} />

@@ -37,6 +37,11 @@ button {
   border-radius: 3px;
 }
 
+.vl {
+  border: 12px solid #506f82;
+  height: 100vh;
+}
+
 /* navigation */
 
 /* .navigation-div {
