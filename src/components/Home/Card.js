@@ -5,10 +5,14 @@ const Card = () => {
     <div style={{ width: "23%" }} className="mx-2 mt-10 cursor-pointer">
       <div className="w-full border border-0 border-solid border-black">
         <div>
-          <img
-            alt="image text"
-            src="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-          ></img>
+          <div className="h-40">
+            <img
+              className="object-cover h-full w-full"
+              alt="image text"
+              src="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            ></img>
+          </div>
+
           <div className="mt-0">
             <span className="text-xs" style={{ color: "gray" }}>
               Credit: Nasa's Image Api of the day

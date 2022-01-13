@@ -1,7 +1,11 @@
-import { _startLoading, _doneLoading } from "./creators/loading";
+import { STOP_LOADING, IS_LOADING } from "../types";
 
-export const startLoading = (dispatch, requestName) =>
-  dispatch(_startLoading(requestName));
+const startLoading = () => dispatch => {
+  dispatch({ type: IS_LOADING });
+};
 
-export const doneLoading = (dispatch, requestName) =>
-  dispatch(_doneLoading(requestName));
+const stopLoading = () => dispatch => {
+  dispatch({ type: STOP_LOADING });
+};
+
+export { startLoading, stopLoading };
