@@ -1,25 +1,27 @@
 import { FETCH_POSTS } from "../types";
 import ApiService from "../../utils/apiService";
 import { getError, clear } from "./alertActions";
-import { startLoading, stopLoading } from "./loadingAction";
+import { startLoading, stopLoading } from "./loadingActions";
 
 export const fetchPosts = () => async dispatch => {
   dispatch(startLoading());
 
   try {
     const resp = await ApiService.fetchPosts();
+    console.log(resp.data);
     if (resp) {
       dispatch(stopLoading());
-      return dispatch({ type: FETCH_POSTS, payload: resp.data.data });
+      return dispatch({ type: FETCH_POSTS, payload: resp.data });
     }
   } catch (error) {
     dispatch(stopLoading());
-    if (error.message === "Network Error" || error.response.status === 500) {
+    if (error) {
       dispatch(getError("Network Error"));
       dispatch(clear());
     } else {
       dispatch(getError(error.response.data.error.message));
       dispatch(clear());
     }
+    console.log(error);
   }
 };

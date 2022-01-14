@@ -89,8 +89,10 @@ ul.navigtion-items {
 /* content section */
 
 .container {
-  width: 95%;
+  max-width: 2000px;
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #address404 {
