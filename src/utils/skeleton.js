@@ -8,7 +8,7 @@ export default function Skeleton({ type }) {
     <div className="postSk">
       <div className="postSkImg"></div>
       <div className="postSkInfo">
-        <div className="postSkAvatar"></div>
+        {/* <div className="postSkAvatar"></div> */}
         <div className="postSkDetail">
           <div className="postSkText"></div>
           <div className="postSkText sm"></div>

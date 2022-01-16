@@ -10,3 +10,5 @@ export const ERROR = "ERROR";
 export const CLEAR = "CLEAR";
 
 export const FETCH_POSTS = "FETCH_POSTS";
+
+export const IS_LIKED = "IS_LIKED";
