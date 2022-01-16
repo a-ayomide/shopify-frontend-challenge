@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import { STOP_LOADING, IS_LOADING } from "../types";
 
 const initialState = {

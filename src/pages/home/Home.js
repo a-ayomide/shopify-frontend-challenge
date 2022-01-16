@@ -17,7 +17,7 @@ const Home = () => {
         <div className="w-9/12">
           <Content />
         </div>
-        <div style={{ width: "1%" }}>
+        <div style={{ width: "5px" }}>
           <div className="mx-2 " style={verticalLine}></div>
         </div>
 

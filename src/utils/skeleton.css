@@ -1,5 +1,5 @@
 .postSk {
-  width: 274px;
+  width: 240px;
   margin-right: 12px;
   margin-bottom: 30px;
   animation: skeleton 1s ease infinite alternate;
@@ -13,7 +13,7 @@
 
 .postSkImg {
   background-color: #313131;
-  width: 274px;
+  width: 240px;
   height: 153px;
 }
 

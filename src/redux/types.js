@@ -3,7 +3,7 @@
  */
 
 export const IS_LOADING = "IS_LOADING";
-export const STOP_LOADING = "START_LOADING";
+export const STOP_LOADING = "STOP_LOADING";
 
 export const SUCCESS = "SUCCESS";
 export const ERROR = "ERROR";

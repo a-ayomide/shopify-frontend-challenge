@@ -8,7 +8,6 @@ export const fetchPosts = () => async dispatch => {
 
   try {
     const resp = await ApiService.fetchPosts();
-    console.log(resp.data);
     if (resp) {
       dispatch(stopLoading());
       return dispatch({ type: FETCH_POSTS, payload: resp.data });
@@ -22,6 +21,5 @@ export const fetchPosts = () => async dispatch => {
       dispatch(getError(error.response.data.error.message));
       dispatch(clear());
     }
-    console.log(error);
   }
 };

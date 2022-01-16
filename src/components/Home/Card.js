@@ -1,15 +1,8 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchPosts } from "../../redux/actions/postsActions";
+import React from "react";
 
-const Card = () => {
-  const dispatch = useDispatch();
-  const postsReducer = useSelector(({ postsReducer }) => postsReducer);
-  useEffect(() => {
-    dispatch(fetchPosts());
-  }, [dispatch]);
+const Card = ({ postsReducer }) => {
   return (
-    <div style={{ width: "23%" }} className="mx-2 mt-10 cursor-pointer">
+    <div style={{ width: "23%" }} className="mx-2 cursor-pointer">
       <div className="w-full border border-0 border-solid border-black">
         <div>
           <div className="h-40">

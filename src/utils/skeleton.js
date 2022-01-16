@@ -1,6 +1,6 @@
 import React from "react";
 import "./skeleton.css";
-import { CircularProgress } from "@material-ui/core";
+// import { CircularProgress } from "@material-ui/core";
 
 export default function Skeleton({ type }) {
   const COUNTER = 8;
@@ -35,11 +35,11 @@ export default function Skeleton({ type }) {
     </div>
   );
 
-  const Circle = () => (
-    <div className="circle">
-      <CircularProgress />
-    </div>
-  );
+  //   const Circle = () => (
+  //     <div className="circle">
+  //       <CircularProgress />
+  //     </div>
+  //   );
 
   const CustomLoading = () => (
     <div className="custom">
@@ -55,6 +55,6 @@ export default function Skeleton({ type }) {
   if (type === "feed") return Array(COUNTER).fill(<FeedSkeleton />);
   if (type === "top") return <TopSkeleton />;
   if (type === "menu") return <MenuSkeleton />;
-  if (type === "circle") return <Circle />;
+  //   if (type === "circle") return <Circle />;
   if (type === "custom") return <CustomLoading />;
 }

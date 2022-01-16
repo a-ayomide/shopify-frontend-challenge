@@ -1,7 +1,8 @@
+/* eslint-disable indent */
 import { FETCH_POSTS } from "../types";
 
 const initialState = {
-  posts: {},
+  posts: [],
 };
 
 const posts = (state = initialState, action) => {
