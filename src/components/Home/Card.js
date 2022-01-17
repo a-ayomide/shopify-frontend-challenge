@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 // import { useDispatch } from "react-redux";
 // import { isLiked } from "../../redux/actions/likeActions";
 
