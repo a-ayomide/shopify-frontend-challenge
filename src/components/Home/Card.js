@@ -32,7 +32,7 @@ const Card = ({ postsReducer }) => {
     <div className="mx-2 w-full sm:w-1/4 cursor-pointer">
       <div className="w-full border border-0 border-solid border-black">
         <div>
-          <div className="h-40">
+          <div className="h-60">
             <img
               className="object-cover h-full w-full"
               alt="nasa"
