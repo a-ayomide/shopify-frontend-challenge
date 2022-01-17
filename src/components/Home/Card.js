@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import Accordion from "../Home/Accordion";
 // import { useLocation } from "react-router-dom";
 // import { useDispatch } from "react-redux";
 // import { isLiked } from "../../redux/actions/likeActions";
@@ -69,6 +70,12 @@ const Card = ({ postsReducer }) => {
             <div className="">
               <span style={{ fontSize: "12px", color: "gray" }}>
                 {postsReducer.posts.date}
+              </span>
+            </div>
+            <div>
+              {/* <Accordion /> */}
+              <span className="text-justify">
+                {postsReducer.posts.explanation}
               </span>
             </div>
           </div>

@@ -17,7 +17,10 @@ const Content = () => {
         {loadingReducer.loading ? (
           <Skeleton type="feed" />
         ) : (
-          <Card postsReducer={postsReducer} />
+          <Card
+            className="flex justify-center items-center mt-10"
+            postsReducer={postsReducer}
+          />
         )}
       </div>
     </div>
