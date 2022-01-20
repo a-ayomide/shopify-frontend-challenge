@@ -13,12 +13,12 @@ const Content = () => {
   }, [dispatch]);
   return (
     <div className="">
-      <div className="flex flex-wrap mx-auto mt-10">
+      <div className="flex flex-wrap mx-auto">
         {loadingReducer.loading ? (
           <Skeleton type="feed" />
         ) : (
           <Card
-            className="flex justify-center items-center mt-10"
+            className="flex justify-center items-center"
             postsReducer={postsReducer}
           />
         )}

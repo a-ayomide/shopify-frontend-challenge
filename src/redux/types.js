@@ -12,3 +12,4 @@ export const CLEAR = "CLEAR";
 export const FETCH_POSTS = "FETCH_POSTS";
 
 export const IS_LIKED = "IS_LIKED";
+export const FETCH_POST = "FETCH_POST";

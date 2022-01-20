@@ -3,7 +3,7 @@ import apiInstance from "./apiInstance";
 class APIServices {
   async fetchPosts() {
     return await apiInstance.get(
-      "/planetary/apod?api_key=SpoFFerO4vUHR3U2itT5LPScFvoeUWfLJ0HblcqH"
+      "/techtransfer/patent/?engine&api_key=SpoFFerO4vUHR3U2itT5LPScFvoeUWfLJ0HblcqH&="
     );
   }
 }

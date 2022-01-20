@@ -1,4 +1,4 @@
-import { FETCH_POSTS } from "../types";
+import { FETCH_POSTS, IS_LIKED, FETCH_POST } from "../types";
 import ApiService from "../../utils/apiService";
 import { getError, clear } from "./alertActions";
 import { startLoading, stopLoading } from "./loadingActions";
@@ -7,10 +7,19 @@ export const fetchPosts = () => async dispatch => {
   dispatch(startLoading());
 
   try {
-    const resp = await ApiService.fetchPosts();
+    let resp = [];
+    const storedData = JSON.parse(localStorage.getItem("isLiked"));
+
+    if (storedData != null) {
+      resp = storedData;
+      console.log(resp);
+    } else {
+      const res = await ApiService.fetchPosts();
+      resp = res.data;
+    }
     if (resp) {
       dispatch(stopLoading());
-      return dispatch({ type: FETCH_POSTS, payload: resp.data });
+      return dispatch({ type: FETCH_POSTS, payload: resp });
     }
   } catch (error) {
     dispatch(stopLoading());
@@ -22,4 +31,12 @@ export const fetchPosts = () => async dispatch => {
       dispatch(clear());
     }
   }
+};
+
+export const updateLike = data => async dispatch => {
+  dispatch({ type: IS_LIKED, payload: data });
+};
+
+export const fetchPost = data => dispatch => {
+  dispatch({ type: FETCH_POST, payload: data });
 };
