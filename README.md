@@ -1,4 +1,5 @@
-Getting Started with Shopify Frontend Challenge
+**Getting Started with Shopify Frontend Challenge**
+
 In the project directory,
 Run:
 
