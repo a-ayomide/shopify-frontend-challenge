@@ -58,6 +58,6 @@ const Card = ({ item, id }) => {
 };
 Card.propTypes = {
   item: PropTypes.array,
-  id: PropTypes.string,
+  id: PropTypes.number,
 };
 export default Card;

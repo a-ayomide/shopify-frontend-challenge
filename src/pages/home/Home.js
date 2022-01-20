@@ -7,13 +7,6 @@ import Card from "../../components/Home/Card";
 import Skeleton from "../../utils/skeleton";
 
 const Home = () => {
-  const verticalLine = {
-    border: "1px solid transparent",
-    backgroundColor: "rgba(80, 111, 130, 0.1)",
-    height: "100%",
-    position: "static",
-  };
-
   const loadingReducer = useSelector(({ loadingReducer }) => loadingReducer);
   const dispatch = useDispatch();
   const { posts, fullViewIsOpen } = useSelector(
@@ -25,7 +18,6 @@ const Home = () => {
   }, [dispatch]);
 
   const data = posts.results;
-  console.log(data);
 
   return (
     <>
@@ -46,9 +38,6 @@ const Home = () => {
               ))
             )}
           </div>
-        </div>
-        <div className="hidden md:flex" style={{ width: "5px" }}>
-          <div className="mx-2 md:fixed mt-10" style={verticalLine}></div>
         </div>
 
         <div

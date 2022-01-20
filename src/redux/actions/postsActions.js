@@ -12,7 +12,6 @@ export const fetchPosts = () => async dispatch => {
 
     if (storedData != null) {
       resp = storedData;
-      console.log(resp);
     } else {
       const res = await ApiService.fetchPosts();
       resp = res.data;

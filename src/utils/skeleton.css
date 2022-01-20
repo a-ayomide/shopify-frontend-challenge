@@ -2,6 +2,7 @@
   width: 270px;
   margin-right: 12px;
   margin-bottom: 30px;
+  flex-grow: 1;
   animation: skeleton 1s ease infinite alternate;
 }
 
@@ -20,6 +21,7 @@
 .postSkInfo {
   display: flex;
   margin-top: 15px;
+  width: 270px;
 }
 
 .postSkAvatar {
