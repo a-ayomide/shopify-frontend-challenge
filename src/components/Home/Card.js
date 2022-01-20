@@ -3,27 +3,13 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import { useDispatch } from "react-redux";
 import { updateLike, fetchPost } from "../../redux/actions/postsActions";
+import PropTypes from "prop-types";
 
 const Card = ({ item, id }) => {
   const dispatch = useDispatch();
-  // const isPostLiked = useSelector(({ postsReducer }) => postsReducer);
-
-  // setIsLiked(!isLiked);
-  // localStorage.setItem("isLiked", JSON.stringify(isLiked));
-  // console.log(isLiked);
-
   const handleLike = () => {
     dispatch(updateLike({ id }));
   };
-
-  // const storageData = JSON.parse(localStorage.getItem("isLiked"));
-
-  // useEffect(() => {
-  //   if (localStorage.getItem(isLiked)) {
-  //     setIsLiked(storageData);
-  //   }
-  //   return;
-  // }, [storageData, isLiked]);
 
   const handleFullView = () => {
     dispatch(fetchPost({ post: item, id: id, fullViewIsOpen: true }));
@@ -65,14 +51,13 @@ const Card = ({ item, id }) => {
               </div>
             </div>
           </div>
-
-          <div>
-            <div className=""></div>
-          </div>
         </div>
       </div>
     </>
   );
 };
-
+Card.propTypes = {
+  item: PropTypes.array,
+  id: PropTypes.string,
+};
 export default Card;

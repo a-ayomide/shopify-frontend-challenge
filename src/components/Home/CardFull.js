@@ -50,9 +50,6 @@ const CardFull = () => {
                 </button>
               </div>
             </div>
-            <div className="mt-2 text-sm">
-              {/* <span>{singleData[2]}</span> */}
-            </div>
             <div className="mt-5 overflow-y-scroll h-64 md:h-96">
               <span className="text-justify ">{data?.[3]}</span>
             </div>

@@ -23,8 +23,6 @@ code {
 #root {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between;
-  min-height: 100vh; */
 }
 
 /* generic elements */
@@ -41,52 +39,6 @@ button {
   border: 12px solid #506f82;
   height: 100vh;
 }
-
-/* navigation */
-
-/* .navigation-div {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-} */
-
-/* header #branding h1 {
-  margin: 0;
-}
-
-header {
-  background-color: #1e3b9e;
-}
-
-header a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-header a:hover {
-  font-weight: bold;
-} */
-
-/* .menu > ul > li {
-  display: inline-block;
-  position: relative;
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  list-style: none;
-  display: inline;
-  padding: 10px;
-}
-
-ul.navigtion-items {
-  display: flex;
-} */
-
-/* content section */
 
 .container {
   max-width: 2000px;
